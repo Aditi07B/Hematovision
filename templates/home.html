@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HematoVision - Upload</title>
+  <style>
+    body { font-family: sans-serif; background: #f6f8fb; text-align: center; padding: 40px; }
+    .upload-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: inline-block; }
+    input[type="file"] { margin-top: 20px; }
+    button { margin-top: 20px; padding: 10px 20px; background: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <div class="upload-box">
+    <h1>🩸 HematoVision</h1>
+    <p>Upload a blood cell image to predict the type</p>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" required><br>
+      <button type="submit">Predict</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <style>
+    body { font-family: sans-serif; background: #f0fff4; text-align: center; padding: 40px; }
+    .result-box { background: white; padding: 30px; border-radius: 10px; display: inline-block; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    img { max-width: 300px; border-radius: 10px; margin-top: 20px; }
+    h2 { color: #28a745; }
+    a { display: block; margin-top: 20px; text-decoration: none; color: #007BFF; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="result-box">
+    <h1>🔬 Prediction Result</h1>
+    <h2>{{ prediction }}</h2>
+    <img src="{{ image_path }}" alt="Uploaded Image">
+    <a href="/">🔁 Predict another image</a>
+  </div>
+</body>
+</html>
