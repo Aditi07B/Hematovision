@@ -31,7 +31,7 @@
 
 #### 1. Clone this repository:
 
-git clone https://github.com/your-username/Hematovision.git
+git clone https://github.com/Aditi07B/Hematovision/tree/main
 cd Hematovision
 #### 2️. Create and activate a virtual environment
 
